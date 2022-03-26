@@ -1,8 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# linka uma url a uma função do python
 @app.route('/')
-def hello_world():
-    return '<h1>helo world</h1>'
-
+def index():
+    return render_template("index.html")
+    
