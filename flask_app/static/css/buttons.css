@@ -1,0 +1,99 @@
+/* *Estilizando os botões da aplicação*/
+button.home{
+    width: 100%;
+    height: 100%;
+    max-width: 92px;
+    max-height: 52px;
+    border-radius: 20px;
+    
+
+    background-color: #703cdc;
+    position: absolute;
+    mix-blend-mode: darken;
+}
+
+button.modo{
+    width: 100%;
+    height: 100%;
+    max-width: 149px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #04539c;
+    position: absolute;
+    mix-blend-mode: normal;
+}
+
+button.inserir_img{
+    width: 100%;
+    height: 100%;
+    max-width: 175px;
+    max-height: 93px;
+    border-radius: 20px;
+
+    background: rgba(27, 52, 141,0.80);
+    border: 1px solid #000000;
+    position: absolute;
+    mix-blend-mode: color-burn;
+    backdrop-filter: blur(4px);
+}
+
+button.tv{
+    width: 100%;
+    height: 100%;
+    max-width: 205px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #72d8de;
+    position: absolute;
+    mix-blend-mode: normal;
+}
+
+button.bilateral{
+    width: 100%;
+    height: 100%;
+    max-width: 70px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #04539c;
+    position: absolute;
+    mix-blend-mode: normal;
+}
+
+button.wavalet{
+    width: 100%;
+    height: 100%;
+    max-width: 98px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #4196e3;
+    position: absolute;
+    mix-blend-mode: normal;
+}
+
+button.media{
+    width: 100%;
+    height: 100%;
+    max-width: 169px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #4196e3;
+    position: absolute;
+    mix-blend-mode: normal;
+}
+
+button.lis{
+    width: 100%;
+    height: 100%;
+    max-width: 149px;
+    max-height: 52px;
+    border-radius: 20px;
+
+    background-color: #4196e3;
+    position: absolute;
+    mix-blend-mode: normal;
+}

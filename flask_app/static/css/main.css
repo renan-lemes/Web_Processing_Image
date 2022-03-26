@@ -1,0 +1,28 @@
+*{
+    width: 100%;
+    height: 100%; 
+    max-width: 1339px;
+    max-height: 1604px;
+}
+
+header.img_header{
+    width: 100%;
+    height: 100%;
+
+    max-width: 1339px;
+    max-height: 554px;
+    background-color: black;
+    
+    mix-blend-mode: exclusion;
+}
+
+img.img-header{
+    width: 100%;
+    height: 100%;
+
+    max-width: 1339px;
+    max-height: 554px;
+    position: absolute;
+    mix-blend-mode:exclusion;
+    filter: sepia(30%)
+}
