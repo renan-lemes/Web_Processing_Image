@@ -11,9 +11,8 @@ header.img_header{
 
     max-width: 1339px;
     max-height: 554px;
-    background-color: black;
-    
-    mix-blend-mode: exclusion;
+
+
 }
 
 img.img-header{
@@ -25,4 +24,21 @@ img.img-header{
     position: absolute;
     mix-blend-mode:exclusion;
     filter: sepia(30%)
+}
+
+footer.img_footer{
+    width: 100%;
+    height: 100%;
+
+    max-width: 1339px;
+    max-height: 156px;
+
+}
+
+img.img_footer{
+    width: 100%;
+    height: 100%;
+
+    max-width: 1339px;
+    max-height: 156px;
 }
