@@ -1,16 +1,20 @@
-button {
-    max-width: 15px;
-    max-height: 30px;
-}
-
 button.select_img {
-    width: 12px;
-    height: 15px;
+    width: 120px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    padding: 0;
+    margin: 10% 50% 10%;
 }
 
 button.return_img {
-    width: 12px;
-    height: 15px;
+    max-width: 150px;
+    max-height: 130px;
+    background-color: white;
+
+    position: relative;
+    padding: 0;
+    margin: 10% 49% 120%;
 }
 
 h3 {
