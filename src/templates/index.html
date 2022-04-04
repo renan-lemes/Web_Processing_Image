@@ -36,8 +36,19 @@
             <button></button>
         </div>
         <div id="site-root">
-            <button class="select_img">Escolher Imagem</button>
-            <button class="return_img">Baixar Imagem</button>
+
+            <button class="select_img">
+                <form id="button_from_post" action="http://127.0.0.1:8000/assets" method="post"
+                    enctype="multipart/form-data">
+                    <input type="file" id="meuArquivo" name="meuArquivo"></br>
+                    <input type="submit" value="Submit">
+                </form>
+            </button>
+
+
+            <button class="return_img">Baixar Imagem
+
+            </button>
 
         </div>
     </div>
