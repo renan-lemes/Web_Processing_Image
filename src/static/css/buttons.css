@@ -1,3 +1,8 @@
+button {
+    max-width: 15px;
+    max-height: 30px;
+}
+
 button.select_img {
     width: 12px;
     height: 15px;
@@ -6,4 +11,24 @@ button.select_img {
 button.return_img {
     width: 12px;
     height: 15px;
+}
+
+h3 {
+    color: white;
+}
+
+p.Produtos {
+    color: white;
+}
+
+li.Blog {
+    color: white;
+}
+
+li.Cases {
+    color: white;
+}
+
+li.Contatos {
+    color: white;
 }
