@@ -1,8 +1,11 @@
+from importlib.resources import path
+import pathlib
 from flask import Flask, render_template, request, jsonify, send_from_directory
 import os
+import pathlib
 
-
-DIRECTION = "C:\\Users\\Renan Lemes\\OneDrive\\Área de Trabalho\\Projeto_\\Web_Processing_Image\\src\\assets"
+#DIRECTION = "C:\\Users\\Renan Lemes\\OneDrive\\Área de Trabalho\\Projeto_\\Web_Processing_Image\\src\\assets"
+DIRECTION = os.getcwd() + '/assets'
 
 app = Flask(__name__)
 
@@ -34,6 +37,7 @@ def post_img():
 
 @app.route('/')
 def index():
+
     return render_template("index.html")
 
 
