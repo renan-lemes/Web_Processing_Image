@@ -1,47 +1,86 @@
 * {
-    width: 100%;
-    height: 100%;
-
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-body {
-    overflow-x: auto;
-    overflow-y: scroll;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-}
-
-#SITE_CONTAINER {
-    position: relative;
-}
-
-img.icon_logo {
-    width: 100%;
-    height: 100%;
-    /* max-width: 15px; */
-    max-height: 20px;
-}
-
-header.header_fixed {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-
-    background-color: white;
-
-    padding: 0;
-}
-
-ul.header_line {
-    width: auto;
-    height: auto;
-
     margin: 0;
     padding: 0;
-    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #666;
+    width: 100vw;
+    height: 100vh;
+}
+
+.site-header-nav {
+    background: blue;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.site-header-nav>div {
+    margin: 10px;
+}
+
+.site-container {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    padding: 10px;
+    /* align-items: center; */
+    align-content: space-between;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: green;
+}
+
+/* .box {
+    width: auto;
+    height: 30px;
+    position: relative;
+    top: -20px;
+
+    background-color: black;
+}
+
+
+.site-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+
+ul.header_line {
+    text-align: center;
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.site-root {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} */

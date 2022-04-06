@@ -62,6 +62,13 @@ li.Cases {
     text-decoration: none;
 }
 
+li.Vagas {
+    background: black;
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+}
+
 li.Contatos {
     background: black;
     color: white;
