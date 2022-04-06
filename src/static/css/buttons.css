@@ -1,10 +1,31 @@
 button.select_img {
-    width: 120px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+
+    max-width: 81px;
+    max-height: 25px;
+
     background-color: white;
     position: relative;
     padding: 0;
     margin: 10% 50% 10%;
+    border-radius: 20%;
+
+    text-align: center;
+}
+
+input.sub {
+    width: 100%;
+    height: 100%;
+    max-width: 81px;
+    max-height: 25px;
+
+    background-color: white;
+    border-radius: 20%;
+    text-align: center;
+
+    margin-top: 200px;
+    display: flex;
 }
 
 button.return_img {
@@ -15,24 +36,35 @@ button.return_img {
     position: relative;
     padding: 0;
     margin: 10% 49% 120%;
-}
+    text-align: center;
+    display: flex;
 
-h3 {
-    color: white;
 }
 
 p.Produtos {
+    background: black;
     color: white;
+    padding: 40px 30px;
+    text-decoration: none;
 }
 
 li.Blog {
+    background: black;
     color: white;
+    padding: 40px 30px;
+    text-decoration: none;
 }
 
 li.Cases {
+    background: black;
     color: white;
+    padding: 40px 30px;
+    text-decoration: none;
 }
 
 li.Contatos {
+    background: black;
     color: white;
+    padding: 40px 30px;
+    text-decoration: none;
 }

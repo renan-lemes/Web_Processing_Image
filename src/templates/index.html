@@ -16,24 +16,18 @@
     <div id="BACKGROUND"></div>
     <div>
         <header class="header_fixed">
-            <img class="icon_logo">
-            <ul>
-                <h3 class="Produtos">Produtos</h3>
+            <ul class="header_line">
+                <img class="icon_logo" href="{{ url_for('static', filename='images/Logo - Pix Labs-01.webp')}}">
+                <p class="Produtos">Produtos</p>
                 <li class="Blog">Blog</li>
                 <li class="Cases">Cases</li>
                 <li class="Vagas">Vagas</li>
                 <li class="Contatos">Contatos</li>
-
             </ul>
         </header>
     </div>
     <div id="SITE_CONTAINER">
         <div id="DIV_SITE_HEADER">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
         </div>
         <div id="site-root">
 
@@ -41,7 +35,7 @@
                 <form id="button_from_post" action="http://127.0.0.1:8000/assets" method="post"
                     enctype="multipart/form-data">
                     <input type="file" id="meuArquivo" name="meuArquivo"></br>
-                    <input type="submit" value="Submit">
+                    <input class="sub" type="submit" value="Submit">
                 </form>
             </button>
 
