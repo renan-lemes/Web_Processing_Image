@@ -6,47 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttons.css')}}">
-
-
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/buttons.css')}}"> -->
     <title>Processamento na web </title>
 </head>
 
 <body>
-    <div id="BACKGROUND"></div>
-    <div>
-        <header class="header_fixed">
-            <ul class="header_line">
-                <img class="icon_logo" href="{{ url_for('static', filename='images/Logo - Pix Labs-01.webp')}}">
-                <p class="Produtos">Produtos</p>
-                <li class="Blog">Blog</li>
-                <li class="Cases">Cases</li>
-                <li class="Vagas">Vagas</li>
-                <li class="Contatos">Contatos</li>
-            </ul>
-        </header>
-    </div>
-    <div id="SITE_CONTAINER">
-        <div id="DIV_SITE_HEADER">
+    <div class="site-header-nav">
+        <div class="header-icon">
+            <p> Icone </p>
         </div>
-        <div id="site-root">
-
-            <button class="select_img">
-                <form id="button_from_post" action="http://127.0.0.1:8000/assets" method="post"
-                    enctype="multipart/form-data">
-                    <input type="file" id="meuArquivo" name="meuArquivo"></br>
-                    <input class="sub" type="submit" value="Submit">
-                </form>
-            </button>
-
-
-            <button class="return_img">Baixar Imagem
-
-            </button>
-
+        <div class="header-title">
+            <h3>Processing Images</h3>
         </div>
     </div>
 
+    <div class="site-container">
+        <div class="card">
+            <form id="button_from_post" action="http://127.0.0.1:8000/assets" method="post"
+                enctype="multipart/form-data">
+                <input type="file" id="meuArquivo" name="meuArquivo"></br>
+                <input class="sub" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="card">
+            <button class="btn">Aplicar filtro</button>
+        </div>
+
+        <div class="card">
+            <h1>Card3</h1>
+        </div>
+    </div>
 </body>
 
 </html>
