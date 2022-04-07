@@ -1,7 +1,6 @@
 from importlib.resources import path
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify, send_from_directory, Response
 import os
-import pathlib
 
 #DIRECTION = "C:\\Users\\Renan Lemes\\OneDrive\\Área de Trabalho\\Projeto_\\Web_Processing_Image\\src\\assets"
 DIRECTION = os.getcwd() + '/assets'
@@ -31,7 +30,15 @@ def post_img():
     print(arquivo)
     nome_do_arquivo = arquivo.filename
     arquivo.save(os.path.join(DIRECTION, nome_do_arquivo))
-    return ''
+    return Response(status=200)
+
+
+""" 
+@app.route('/', methods=["GET"])
+def autenticar_img():
+    img = request.args.get('nome_do_arquivo')
+    print(img)
+    return img """
 
 
 @app.route('/')

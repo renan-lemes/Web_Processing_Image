@@ -55,32 +55,11 @@ body {
     background: green;
 }
 
-/* .box {
-    width: auto;
-    height: 30px;
-    position: relative;
-    top: -20px;
-
-    background-color: black;
+.box-img {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
 }
-
-
-.site-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-ul.header_line {
-    text-align: center;
-    background: white;
-    margin: 20px 0;
-    padding: 10px;
-}
-
-.site-root {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-} */
