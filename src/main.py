@@ -1,7 +1,7 @@
 from importlib.resources import path
 from flask import Flask, render_template, request, jsonify, send_from_directory, Response
 import os
-
+import jyserver.Flask as jsf
 #DIRECTION = "C:\\Users\\Renan Lemes\\OneDrive\\Área de Trabalho\\Projeto_\\Web_Processing_Image\\src\\assets"
 DIRECTION = os.getcwd() + '/assets'
 
@@ -41,10 +41,27 @@ def autenticar_img():
     return img """
 
 
+@jsf.use(app)
+class App:
+    def __init__(self):
+        arquivos = []
+        for nome_do_arquivo in os.listdir(DIRECTION):
+            endereco_do_arquivo = os.path.join(DIRECTION, nome_do_arquivo)
+            if(os.path.isfile(endereco_do_arquivo)):
+                arquivos.append(nome_do_arquivo)
+
+        self.img = arquivos[0]
+        print(self.img)
+
+    def add_img(self):
+        self.img = self.js.document.getElementBy(
+            "ativar-img").innerHTML = self.img
+
+
 @app.route('/')
 def index():
 
-    return render_template("index.html")
+    return App.render(render_template("index.html"))
 
 
 if __name__ == "__main__":
