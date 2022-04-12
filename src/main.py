@@ -1,3 +1,4 @@
+from http import server
 from importlib.resources import path
 from flask import Flask, render_template, request, jsonify, send_from_directory, Response
 import os
@@ -33,14 +34,6 @@ def post_img():
     return Response(status=200)
 
 
-""" 
-@app.route('/', methods=["GET"])
-def autenticar_img():
-    img = request.args.get('nome_do_arquivo')
-    print(img)
-    return img """
-
-
 @jsf.use(app)
 class App:
     def __init__(self):
@@ -56,12 +49,13 @@ class App:
     def add_img(self):
         self.img = self.js.document.getElementBy(
             "ativar-img").innerHTML = self.img
+        return self.img
 
 
 @app.route('/')
 def index():
-
-    return App.render(render_template("index.html"))
+    img = App.img
+    return App.render(render_template("index.html", img=img))
 
 
 if __name__ == "__main__":
