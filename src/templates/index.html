@@ -22,8 +22,7 @@
 
     <div class="site-container">
         <div class="card">
-            <form id="button_from_post" action="http://127.0.0.1:8000/assets" method="post"
-                enctype="multipart/form-data">
+            <form id="button_from_post" action="http://127.0.0.1:8000/img" method="post" enctype="multipart/form-data">
                 <input type="file" id="meuArquivo" name="meuArquivo"></br>
                 <input class="sub" type="submit" value="Submit">
             </form>
@@ -47,7 +46,7 @@
 
         <div class=" card">
             <div class="box-img">
-                <img src="/src/assets/tela.png" type="images">
+                <img onclick="Location.reload()" src="../static/img/{{img}}" type="images">
             </div>
         </div>
     </div>
